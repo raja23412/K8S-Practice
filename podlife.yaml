@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Pod
 metadata: 
-  name: life-pod
+  name: lifecycle-pod
 spec: 
     containers:
-     - name: life 
+     - name: lifecycleimage
        image: nginx
-       command: ["sh", "-c", "exit 0"]
+       command: ["sh", "-c", "exit 1"]
